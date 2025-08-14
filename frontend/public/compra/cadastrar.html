@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <script src="../../assets/js/compra/cadastrar.js" defer></script>
+    <title>Cadastrar</title>
+</head>
+<body>
+    <header>
+        <a href="../../index.html">Home</a>
+        <a href="../compra.html">Compra</a>
+        <a href="./cadastrar.html">Cadastrar</a>
+        <a href="./listar.html">Listar</a>
+        <a href="./atualizar.html">Atualizar</a>
+        <a href="./apagar.html">Apagar</a>
+    </header>
+    <main>
+    <h1>Cadastrar Compra</h1>
+    <form>
+        <label for="fk_produto">ID do Produto:</label>
+        <input type="number" id="fk_produto" placeholder="Ex.: 1" required>
+
+        <label for="fk_usuario">ID do Usuário:</label>
+        <input type="number" id="fk_usuario" placeholder="Ex.: 1" required>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" placeholder="Ex.: 2" required>
+
+        <label for="dataCompra">Data da Compra:</label>
+        <input type="text" id="dataCompra" placeholder="Ex.: 2024-05-30" required>
+
+        <label for="valorUnitario">Valor Unitário:</label>
+        <input type="number" id="valorUnitario" step="0.01" placeholder="Ex.: 10.50" required>
+
+        <label for="tipoPagamento">Tipo de Pagamento:</label>
+        <input type="text" id="tipoPagamento" placeholder="Ex.: Cartão Débito" required>
+
+        <label for="status">Status:</label>
+        <input type="text" id="status" placeholder="Ex.: Pago" required>
+
+        <button id="cadastrar">Cadastrar</button>
+        <div id="res"></div>
+    </form>
+</main>
+</body>
+</html>
