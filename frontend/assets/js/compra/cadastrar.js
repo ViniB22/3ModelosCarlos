@@ -8,9 +8,6 @@ cadastrar.addEventListener("click", (e) => {
     let fk_usuario = document.getElementById("fk_usuario").value
     let quantidade = document.getElementById("quantidade").value
     let dataCompra = document.getElementById("dataCompra").value
-    let valorUnitario = document.getElementById("valorUnitario").value
-    // let descontoAplicado =    // verificar
-    // let precoFinal =    // verificar
     let tipoPagamento = document.getElementById("tipoPagamento").value
     let status = document.getElementById("status").value
 
@@ -24,9 +21,6 @@ cadastrar.addEventListener("click", (e) => {
         fk_usuario: fk_usuario,
         quantidade: quantidade,
         dataCompra: dataCompra,
-        valorUnitario: valorUnitario,
-        descontoAplicado: descontoAplicado,
-        precoFinal: precoFinal,
         tipoPagamento: tipoPagamento,
         status: status
     }
